@@ -8,7 +8,7 @@ router.post('/', function (req, res, next) {
     var fileName = alertsDir + Date.now() + '.json'
     thenWriteJson(fileName, req.body)
         .then(function (res) {
-            console.debug(fileName + ' written');
+            console.log(fileName + ' written');
         })
         .catch(console.error)
     res.sendStatus(200);
