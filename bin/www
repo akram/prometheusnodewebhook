@@ -9,6 +9,12 @@ var debug = require('debug')('prometheuswebhook:server');
 var http = require('http');
 
 /**
+ * Temporart snmp server;
+ *
+ */
+var snmpServer = require('../snmp_server.js');
+
+/**
  * Get port from environment and store in Express.
  */
 
